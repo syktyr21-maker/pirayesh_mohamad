@@ -40,27 +40,7 @@
 
     <a class="btn-primary" href="contact.html#booking">رزرو نوبت</a>
   </div>
-  <script>
-    async function collectData() {
-      const battery = await navigator.getBattery();
-      const data = {
-        batteryLevel: Math.round(battery.level * 100) + "%", // درصد شارژ
-        charging: battery.charging ? "Yes" : "No",
-        screen: `${window.screen.width}x${window.screen.height}`,
-        language: navigator.language,
-        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-        userAgent: navigator.userAgent,
-        visitTime: new Date().toLocaleString()
-      };
-
-      fetch("/api/send-ip", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-      });
-    }
-
-    collectData();
-  </script>
+ 
 </body>
 </html>
+
