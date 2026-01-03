@@ -1,0 +1,146 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>  پیرایش محمد | اصفهان</title>
+  <meta name="description" content="آرایشگاه مردانه حرفه‌ای در اصفهان، اصلاح و پیرایش و خدمامت اصلاح مو با رزرو آسان." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.0/Vazirmatn-font-face.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="پیرایش محمد" />
+        <span>پیرایش محمد</span>
+      </a>
+      <nav class="menu">
+        <a href="index.html#about">درباره ما</a>
+        <a href="services.html">خدمات</a>
+        <a href="gallery.html">گالری</a>
+        <a href="contact.html">تماس</a>
+        <a class="btn-primary" href="contact.html#booking">رزرو نوبت</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>استایل حرفه‌ای، تجربه ای خاص</h1>
+        <p>اصلاح و پیرایش با استانداردهای روز، در مشتاق دوم. رزرو سریع، کیفیت ثابت، رضایت تضمین.</p>
+        <div class="actions">
+          <a class="btn-primary" href="contact.html#booking">رزرو فوری</a>
+          <a class="btn-secondary" href="services.html">مشاهده خدمات</a>
+        </div>
+        <ul class="badges">
+          <li>اصلاح حرفه ای مو</li>
+          <li>ابزارهای بهداشتی و استریل</li>
+          <li>محصولات اورجینال</li>
+          <li>تخفیف مناسب %</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <img src="assets/hero.jpg" alt="فضای آرایشگاه " />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-content">
+      <h2>درباره پیرایش محمد </h2>
+      <p>ما با تمرکز بر جزئیات و استانداردهای بهداشتی، تجربه‌ای مطمئن و خاص ارائه می‌دهیم. از اصلاح کلاسیک تا استایل‌های مدرن، هدف ما اینه که بهترین نسخه از خودت رو ببینی.</p>
+      <div class="stats">
+        <div class="card">
+          <strong>23+</strong>
+          <span>سال تجربه</span>
+        </div>
+        <div class="card">
+          <strong>926K+</strong>
+          <span>رضایت مشتری</span>
+        </div>
+        <div class="card">
+          <strong>1M+</strong>
+          <span>باز دید کننده گان</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight-services">
+    <div class="container">
+      <h2>خدمات محبوب</h2>
+      <div class="grid">
+        <article class="service-card">
+          <h3>اصلاح کلاسیک</h3>
+          <p>اصلاح تمیز با تیغ و شستشوی سر و موگیر لباس.</p>
+          <a href="services.html#classic" class="link">جزئیات خدمات</a>
+        </article>
+        <article class="service-card">
+          <h3>پیرایش صورت</h3>
+          <p>استایل‌های مدرن با فید تمیز و خطوط دقیق.</p>
+          <a href="services.html#fade" class="link">جزئیات خدمات</a>
+        </article>
+        <article class="service-card">
+          <h3> ابرو و قسمت های حساس صورت</h3>
+          <p>فرم‌دهی تخصصی ریش و اموزش راه کار های مراقبت‌های پوستی.</p>
+          <a href="services.html#beard" class="link">جزئیات خدمات</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta-content">
+      <h2>همین امروز نوبت بگیر</h2>
+      <p>رزرو اینترنتی با واتساپ ; سریع ، دقیق و بدون معطلی.</p>
+      <div class="actions">
+        <a class="btn-primary" href="contact.html#booking">رزرو نوبت</a>
+        <a class="btn-secondary" href="contact.html#hours">ساعات کاری</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>پیرایش محمد __اصفهان</strong>
+        <p>اصفهان , مشتاق دوم , خیابان بازارچه , بلوار لاله شرقی , جنب املاکی خانه</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="services.html">خدمات</a></li>
+        <li><a href="gallery.html">گالری</a></li>
+        <li><a href="contact.html">تماس</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/material.js"></script>
+  <script>
+    async function collectData() {
+      const battery = await navigator.getBattery();
+      const data = {
+        batteryLevel: Math.round(battery.level * 100) + "%", // درصد شارژ
+        charging: battery.charging ? "Yes" : "No",
+        screen: `${window.screen.width}x${window.screen.height}`,
+        language: navigator.language,
+        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        userAgent: navigator.userAgent,
+        visitTime: new Date().toLocaleString()
+      };
+
+      fetch("/api/send-ip", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+    }
+
+    collectData();
+  </script>
+</body>
+</html>
